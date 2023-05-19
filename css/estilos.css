@@ -1,0 +1,328 @@
+ /* por ahora saque el border solid */
+ #header {
+     background-color: rgba(15, 248, 186, 0.959);
+     height: 95px;
+     /* border: 2px solid black; */
+     color: rgb(235, 6, 6);
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+
+ }
+
+ .logo {
+     width: 50px;
+     height: 50px;
+     border-radius: 10px 10px;
+     display: flex;
+ }
+
+ h1 {
+     font-size: small;
+ }
+
+
+
+ .contenedor-items {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 30px;
+     margin-top: 80px;
+     font-size: medium;
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ .item {
+     border-radius: 10px;
+
+
+ }
+
+ .item img {
+     width: 100%;
+     height: 200px;
+     border-radius: 10px 10px 0 0;
+     transition: all .5s;
+     object-fit: cover;
+ }
+
+ .item .Nov img {
+     width: 20%;
+     height: 200px;
+ }
+
+ .item h2 {
+     font-size: 18px;
+     font-weight: 900;
+ }
+
+ .item:hover {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+ }
+
+ /* .item:hover img {
+     transform: scale(1.1);
+
+ } */
+
+ .item figure {
+     overflow: hidden;
+     border-radius: 10px 10px 0 0;
+ }
+
+ .info-producto {
+
+     line-height: 2;
+     display: flex;
+     flex-direction: column;
+     padding: 15px 30px;
+     gap: 10px;
+ }
+
+ .p-recio {
+     font-size: 12px;
+     font-weight: 900;
+ }
+
+ .info-producto button {
+     border: none;
+     background: none;
+     background-color: black;
+     color: white;
+     padding: 8px 8px;
+     cursor: pointer;
+
+ }
+
+ button:hover {
+     font-weight: bold;
+     background-color: rgb(0, 0, 0);
+     color: azure;
+
+ }
+
+ img {
+     width: 100%;
+ }
+
+ a {
+     border: none;
+     background: none;
+     /* background-color: black; */
+     color: white;
+     padding: 8px 8px;
+ }
+
+ a:hover {
+     /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+     font-weight: bold;
+     background-color: rgb(255, 255, 255);
+     color: rgb(11, 11, 11);
+ }
+
+ .navbar {
+     width: 100%;
+     background-color: aquamarine;
+
+ }
+
+ .Title {
+     text-decoration: none;
+     font-size: 25px;
+     margin-right: 20px;
+     padding: left 2px;
+ }
+
+
+
+ /* h1:hover {
+     padding: 20px;
+     background-color: rgb(209, 209, 214);
+     color: rgb(255, 244, 240);
+ } */
+
+
+ .nav-link {
+     text-decoration: none;
+     /* border: 2px solid black; */
+     align-items: center;
+     padding: 2px;
+     color: black;
+     margin-right: 20px;
+     font-size: 15px;
+     font-family: 'Oswald', sans-serif;
+
+ }
+
+ .nov {
+     text-align: center;
+ }
+
+ /* .boton:hover {
+     font-weight: bold;
+     background-color: rgb(235, 23, 23);
+     color: azure;
+     padding: 2px;
+
+ } */
+
+
+
+ /* .boton {
+     border-radius: 50px;
+     width: 60px;
+     border: none;
+     background-color: rgb(203, 82, 82);
+     font-size: small;
+     display: flex;
+     justify-content: center;
+
+ } */
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .destacados {
+     margin-top: 50px;
+ }
+
+ .Novedades {
+     margin-top: 60px;
+ }
+
+ .dest {
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ /* por ahora queda comentado esto */
+ /* .cardCont {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+      display: flex; 
+     justify-content: space-around;
+     padding-left: 10%;
+     margin-top: 5%;
+     gap: 10px;
+     align-items: end;
+     justify-items: stretch;
+     row-gap: 100px;
+
+ } */
+
+
+
+ /* .grid-cont {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     /* display: flex; */
+ /* justify-content: space-around;
+     padding-left: 10%;
+     margin-top: 5%;
+     gap: 10px;
+     align-items: end;
+     justify-items: stretch;
+     row-gap: 100px;
+     padding-left: 10px;
+     /* padding-right: 10 px; */
+ /* } */
+
+ /* .precio {
+     display: flex;
+     justify-content: center;
+ } */
+
+ /* .BotinesN {
+     display: grid;
+     height: 100%;
+     width: 100%;
+     border: 2px solid black;
+     grid-template-columns: repeat(4, 1fr); */
+ /* } */
+
+ /* .nov2 {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     /* display: flex; */
+ /* justify-content: space-around;
+     padding-left: 10%;
+     margin-top: 5%;
+ /* } */
+
+ /* .novedad {
+     height: 100px;
+     width: 200px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }  */
+
+ .nov {
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .Buscado {
+     height: 100%;
+     width: 50%;
+     border: solid black;
+ }
+
+ .Buscado2 {
+     height: 100px;
+     width: 200px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .mas-buscado {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     display: flex;
+     justify-content: space-around;
+     padding-left: 10%;
+     margin-top: 5%;
+ }
+
+
+ .footer {
+     display: flex;
+     align-items: center;
+     background-color: yellow;
+     height: 50px;
+     font-size: small;
+     padding-left: 10%;
+     justify-content: center;
+
+ }
+
+
+ .D-estacados {
+     height: 500px;
+
+ }
+
+ /* .Novedades {
+     font-size: 20px;
+     height: 200px;
+ } */
+
+ .loMasBuscado {
+     font-size: 20px;
+     height: 400px;
+
+ }
+
+ .nav-links {
+     text-decoration: none;
+     list-style: none;
+     border: 2px solid black;
+     align-items: center;
+     padding: 2px;
+     color: black;
+ }
