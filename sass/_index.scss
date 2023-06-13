@@ -1,0 +1,217 @@
+$size_a: 15px;
+$margin_t: 25px;
+$high_sec: 475px;
+
+.navbar-nav {
+    a {
+        font-size: $size_a;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: "Oswald", sans-serif;
+    }
+
+}
+
+.container-fluid {
+    background-color: rgb(0, 0, 0);
+    height: 125px;
+}
+
+.navbar-light {
+    .navbar-brand {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+}
+
+.navbar-nav {
+    a:hover {
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+.nav-link {
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255);
+}
+
+.item {
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        transition: all 0.5s;
+        object-fit: cover;
+    }
+
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    figure {
+        overflow: hidden;
+    }
+
+}
+
+.item:hover {
+    img {
+        transform: scale(1.1);
+    }
+
+}
+
+.item {
+    h2 {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+}
+
+.item {
+    .Buscado {
+        img {
+            width: 20%;
+            height: 200px;
+        }
+    }
+
+
+}
+
+.item {
+    .Nov {
+
+        img {
+            width: 20%;
+            height: 200px;
+        }
+
+    }
+}
+
+.contenedor-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+    font-size: medium;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info-producto {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    gap: 10px;
+}
+
+.info-producto {
+    button {
+        border: none;
+        background: none;
+        background-color: black;
+        color: white;
+        padding: 8px 8px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: azure;
+    }
+
+}
+
+.info-producto {
+    button:hover {
+        background-color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+}
+
+img {
+    width: 100%;
+}
+
+.p-recio {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.dest {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+}
+
+.destacados {
+    margin-top: 25px;
+}
+
+.D-estacados {
+    margin-top: $margin_t;
+    height: $high_sec;
+}
+
+.Nov-edades {
+    margin-top: $margin_t;
+    height: $high_sec;
+}
+
+.nov {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+.nov:hover {
+    color: antiquewhite;
+
+}
+
+.Novedades {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Mas-buscado {
+    margin-top: $margin_t;
+    height: $high_sec;
+}
+
+.masBuscado {
+    color: #000000;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.masBuscado:hover {
+    color: #f6f6f6;
+}
+
+.B-uscado {
+    margin-top: 60px;
+}

@@ -1,0 +1,71 @@
+#newsletter {
+    button {
+        border-radius: 4px;
+        white-space: nowrap;
+        border: none;
+        background: none;
+        background-color: black;
+        color: white;
+        padding: 8px 8px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+}
+
+#newsletter {
+    input {
+        height: 3.125rem;
+        padding: 0 0.125em;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}
+
+#newsletter {
+    p {
+        font-size: 15px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        color: #fafffd;
+    }
+
+}
+
+#newsletter {
+    .form {
+        display: flex;
+        width: 40%;
+    }
+
+}
+
+#newsletter {
+    h3 {
+        font-size: 25px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        color: #fafffd;
+    }
+
+}
+
+#newsletter {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(255, 11, 11);
+    padding: 40px 80px;
+    margin: 40px 0;
+}
