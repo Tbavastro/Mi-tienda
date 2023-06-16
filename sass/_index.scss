@@ -125,19 +125,19 @@ $high_sec: 475px;
     gap: 10px;
 }
 
-.info-producto {
-    button {
-        border: none;
-        background: none;
-        background-color: black;
-        color: white;
-        padding: 8px 8px;
-        cursor: pointer;
-        background-color: rgb(0, 0, 0);
-        color: azure;
-    }
+// .info-producto {
+//     button {
+//         border: none;
+//         background: none;
+//         background-color: black;
+//         color: white;
+//         padding: 8px 8px;
+//         cursor: pointer;
+//         background-color: rgb(0, 0, 0);
+//         color: azure;
+//     }
 
-}
+// }
 
 .info-producto {
     button:hover {
@@ -162,6 +162,14 @@ img {
     color: #000000;
     font-family: "Oswald", sans-serif;
     font-weight: 900;
+
+}
+
+.dest {
+    h2 {
+        color: #f6f6f6;
+        background-color: #000000;
+    }
 }
 
 .destacados {
@@ -169,7 +177,6 @@ img {
 }
 
 .D-estacados {
-    margin-top: $margin_t;
     height: $high_sec;
 }
 
@@ -184,6 +191,29 @@ img {
     color: #000000;
     text-align: center;
 }
+
+.nov {
+    h2 {
+        color: #f6f6f6;
+        background-color: #000000;
+    }
+}
+
+a {
+    .Ver {
+        border: none;
+        background: none;
+        background-color: black;
+        color: white;
+        padding: 8px 8px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        width: 100%;
+    }
+}
+
+
 
 .nov:hover {
     color: antiquewhite;
@@ -201,11 +231,12 @@ img {
 }
 
 .masBuscado {
-    color: #000000;
+    color: #f6f6f6;
     text-align: center;
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     margin-top: 20px;
+    background-color: #000000;
 }
 
 .masBuscado:hover {
