@@ -166,12 +166,16 @@ a .Ver {
   height: 475px;
 }
 
-.masBuscado {
+.Mas-buscado .masBuscado {
   color: #f6f6f6;
   text-align: center;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   margin-top: 20px;
+  list-style: none;
+}
+
+.Mas-buscado .masBuscado h2 {
   background-color: #000000;
 }
 
@@ -401,7 +405,7 @@ footer {
 }
 
 #sidebar {
-  background-color: rgb(232, 147, 147);
+  background-color: rgb(0, 0, 0);
   grid-area: sidebar;
   font-family: "Oswald", sans-serif;
   border-right: solid black;
@@ -417,22 +421,61 @@ footer {
   align-items: flex-start;
   margin: 0 10px;
   line-height: 3;
-  color: #f6f6f6;
+  color: #000000;
   margin-top: 2px;
   width: 100%;
 }
 
+.bar .side:hover {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
 .bar .side {
-  background-color: #000000;
+  background-color: #ffffff;
   width: 150px;
   text-align: center;
   height: 35px;
   justify-content: center;
 }
 
-a {
-  color: #f6f6f6;
+.bar .side-e {
+  background-color: #ffffff;
+  width: 150px;
+  text-align: center;
+  height: 35px;
+  justify-content: center;
+}
+
+.bar .side-e .bi .bi-caret-right {
+  font-size: 20px;
+}
+
+.bar .Categorias {
+  color: #000000;
   text-decoration: none;
+  background-color: #ffffff;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.nosotros h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+.nosotros .quienes-somos p {
+  text-align: center;
+}
+
+.bar .categorias:hover {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .bar p a {
@@ -443,22 +486,19 @@ a {
   justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+.nosotros h2 {
+  text-align: center;
+}
 
+
+@media screen and (max-width: 900px) {
 
   .D-estacados {
-    height: 750px;
+    height: 900px;
   }
 
   .bar {
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    margin: 0 10px;
-    line-height: 3;
-    color: #f6f6f6;
-    margin-top: 2px;
-    width: 100%; */
+
     display: none;
   }
 
@@ -466,6 +506,11 @@ a {
     display: grid;
     grid-template-areas: "sidebar foto";
 
+  }
+
+  .iten {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
   }
 
   #foto-container .column {
@@ -478,11 +523,14 @@ a {
     margin: 0 auto;
   }
 
+  #sidebar {
+    display: none;
+  }
+
   .form-control {
     display: block;
-    width: 250px;
+    width: 100%;
     height: 35px;
-    /* padding: 0.375rem 0.75rem; */
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -521,7 +569,6 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 11, 11);
-    /* padding: 40px 80px; */
     margin: 40px 0;
   }
 
@@ -543,31 +590,22 @@ a {
   }
 
   .Nov-edades {
-    height: 800px;
+    height: 900px;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
-  /* .Novedades {
-    margin-top: 0px;
-  } */
+
 
   .Mas-buscado {
-    height: 850px;
+    height: 900px;
   }
 
   .B-uscado {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
-  /* .info-producto {
-   line-height: 1;
-   display: flex;
-   flex-direction: column;
-   padding: 15px 30px;
-   gap: 2px;
-   margin-top: 10px;
- } */
+
 
   #newsletter {
     height: 300px;
@@ -576,7 +614,6 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 11, 11);
-    /* padding: 40px 80px; */
     margin: 40px 0;
   }
 
@@ -596,7 +633,6 @@ a {
     padding: 40px 80px;
     background-color: rgb(0, 0, 0);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
   }
@@ -616,9 +652,6 @@ a {
     font-family: "Oswald", sans-serif;
   }
 
-  /* footer .c-ontacto {
-   font-size: 15px;
-} */
   footer .co-ntacto {
     font-size: 13px;
     text-decoration: none;
@@ -639,18 +672,6 @@ a {
     margin-top: 20px;
   }
 
-  /* footer h4 {
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 10px;
-    justify-content: center;
-    color: #fafffd;
-    font-family: "Oswald", sans-serif;
-  } */
-
-  /* footer .col h4 {
-   text-align: center;
-} */
   footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
@@ -669,15 +690,209 @@ a {
     align-items: center;
   }
 
-  /* footer a {
+}
+
+@media screen and (max-width: 500px) {
+
+  .iten {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+  }
+
+  .D-estacados {
+    height: 850px;
+  }
+
+  .bar {
+
+    display: none;
+  }
+
+  .con-tainer {
+    display: grid;
+    grid-template-areas: "sidebar foto";
+
+  }
+
+  #foto-container .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+    font-size: medium;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    display: block;
+    width: 250px;
+    height: 35px;
+
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #232129;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .destacados {
+    margin-top: 0px;
+  }
+
+  #newsletter {
+    height: 300px;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 11, 11);
+    margin: 40px 0;
+  }
+
+  .contenedor-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 40px;
+  }
+
+  .item {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+  }
+
+  .item img {
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .Nov-edades {
+    height: 900px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+
+
+  .Mas-buscado {
+    height: 900px;
+  }
+
+  .B-uscado {
+    margin-top: 0px;
+  }
+
+
+
+  #newsletter {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 11, 11);
+    margin: 40px 0;
+  }
+
+  #newsletter .form {
+    display: flex;
+    width: 100%;
+  }
+
+  #newsletter h3 {
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #fafffd;
+  }
+
+  .footer {
+    padding: 40px 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .futer {
+    height: 500px;
+  }
+
+  footer .col {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+
+  .c-opy {
+    font-size: 10px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  footer .co-ntacto {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: #fafffd;
+    font-family: "Oswald", sans-serif;
+  }
+
+  footer .alta-gama {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fafffd;
+    font-family: "Oswald", sans-serif;
+  }
+
+  footer .follow {
+    margin-top: 20px;
+  }
+
+  footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
-    text-decoration: none;
-    color: #ffffff;
-    margin-bottom: 10px;
-    list-style: none;
+    color: #fafffd;
     font-family: "Oswald", sans-serif;
-  } */
+  }
+
+  .col img {
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    background-color: #fafffd;
+  }
+
+  .col-install {
+    align-items: center;
+  }
+
 }
+
+
+
+
 
 /*# sourceMappingURL=estilos.css.map */

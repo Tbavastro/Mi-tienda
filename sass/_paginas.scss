@@ -125,7 +125,7 @@
 }
 
 #sidebar {
-    background-color: rgb(232, 147, 147);
+    background-color: rgb(0, 0, 0);
     grid-area: sidebar;
     font-family: "Oswald", sans-serif;
     border-right: solid black;
@@ -147,15 +147,23 @@
     align-items: flex-start;
     margin: 0 10px;
     line-height: 3;
-    color: #f6f6f6;
+    color: #000000;
     margin-top: 2px;
     width: 100%;
 }
 
 .bar {
+    .side:hover {
+        font-weight: bold;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.bar {
 
     .side {
-        background-color: #000000;
+        background-color: #ffffff;
         width: 150px;
         text-align: center;
         height: 35px;
@@ -164,9 +172,61 @@
 
 }
 
-a {
-    color: #f6f6f6;
-    text-decoration: none;
+.bar {
+    .side-e {
+        background-color: #ffffff;
+        width: 150px;
+        text-align: center;
+        height: 35px;
+        justify-content: center
+    }
+}
+
+.bar {
+    .side-e {
+        .bi {
+            .bi-caret-right {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.bar {
+
+    .Categorias {
+        color: #000000;
+        text-decoration: none;
+        background-color: #ffffff;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-family: "Oswald", sans-serif;
+    }
+}
+
+.nosotros {
+    h2 {
+        font-family: "Oswald", sans-serif;
+    }
+}
+
+.nosotros {
+    .quienes-somos {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.bar {
+    .categorias:hover {
+        font-weight: bold;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
 }
 
 .bar {
@@ -182,4 +242,10 @@ a {
 
     }
 
+}
+
+.nosotros {
+    h2 {
+        text-align: center;
+    }
 }
